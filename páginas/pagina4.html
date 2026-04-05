@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo1.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <nav> 
+        <hr> 
+        <ul class="menu"> 
+            <li><a href="../index.html">Inicio</a>
+            </li> <li><a href="../páginas/pagina1.html">Historia</a>
+            </li> <li><a href="../páginas/pagina2.html">Adaptaciones</a>
+            </li> <li><a href="../páginas/pagina3.html">Sobre el autor</a></li> 
+            </li> <li><a href="../páginas/pagina4.html">Contacto</a></li>
+        </ul> 
+        <hr> 
+    </nav> 
+
+    <h1>Formulario de Contacto</h1>
+
+    
+    <form action="http://servidor5/AppMed/recoger6.php" method="post">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" size="15" maxlength="20" required>
+        </p>
+        <p>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" size="30" maxlength="40" required>
+        </p>
+        <p>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" size="12" required>
+        </p>
+        <p>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" size="20" maxlength="30" required>
+        </p>
+        <p>
+            <label for="temas">Temas de interés:</label>
+            <select id="temas" name="temas" required>
+                <option value="Videojuegos">Videojuegos</option>
+                <option value="Películas">Películas</option>
+                <option value="Noticias">Noticias</option>
+                <option value="Curiosidades">Curiosidades</option>
+                <option value="Cartas">Juego de Cartas</option>
+            </select>
+        </p>
+        <p>
+            <label for="sugerencias">Sugerencias:</label>
+            <textarea id="sugerencias" name="sugerencias" rows="5" cols="30"></textarea>
+        </p>
+        <p>
+            <label for="novedades">
+                <input type="checkbox" id="novedades" name="novedades" checked>
+                Deseo recibir las novedades de la web
+            </label>
+        </p>
+        <p>
+            <label for="calificacion">Calificación de la web:</label>
+            <select id="calificacion" name="calificacion" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </p>
+        <p>
+            ¿Acepta los términos del contrato de licencia de envío de información?<br>
+            <label for="acepto">
+                <input type="radio" id="acepto" name="terminos" value="si">
+                Sí
+            </label>
+            <label for="noacepto">
+                <input type="radio" id="noacepto" name="terminos" value="no" checked>
+                No
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
+
+</body>
+<footer> 
+    <p>&copy; Práctica 1</p> 
+</footer>
+</html>
